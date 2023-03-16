@@ -19,7 +19,7 @@
         <nav class="header-navigation">
           <a class="header-logo link" href="./index.html"><span class="header-span">WEB</span>STUDIO</a>
           <ul class="header-list-nav list">
-            <li class="header-item">
+            <li class="header-item active">
               <a class="header-link link" href="./index.html">Studio</a>
             </li>
             <li class="header-item">
@@ -50,8 +50,17 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btn" type="button">Order Service</button>
+          <button class="hero-btn" data-modal-open type="button">Order Service</button>
         </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="close-btn" data-modal-close> <svg width="8px" height="8px">
+              <use href="./images/symbols/symbol-defs.svg#icon-close"></use>
+              
+            </svg>
+            </button>
+          </div>
+        </div>  
       </section>
       <!--/hero-->
       <!--strategy-->
@@ -369,5 +378,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
